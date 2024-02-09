@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book-Movie Search</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        search-button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        results {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p>INFO</p>
+ <h1>Book and Movie Search</h1>
+ <input type="text" id="search-input" placeholder="Enter you search here">
+ <button id="search-button">Search</button>
+ <div id="results"></div>
+
+ <script>
+    const searchImput = document.getElementById('search-input')
+    const searchButton = document.getElementById('search-button')
+    const resultsDiv = document.getElementById('resuts')
+ </script>
 </body>
 </html>

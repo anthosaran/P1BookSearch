@@ -81,3 +81,6 @@ overview {
     overflow: auto;
 }
 
+overview h2 {
+    margin-top: 0;
+}

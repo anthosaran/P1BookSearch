@@ -3,33 +3,34 @@
 @tailwind utilities;
 
 /*Search Bar Styling*/
-body {
+.body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-color: black;
     margin: 0;
 }
 
-search-imput {
+.search-imput {
     width: 400px;
     padding: 10px;
     font-size: 17px;
 }
 
 
-search-button {
-    padding: 10px;  /* change to tailwind */
-    font-size: 17px; /* change to tailwind */
-    cursor: pointer;
-    background-color: aqua; /* change to tailwind */
-    border: none;
-    color: white; /* change to tailwind */
-    border-radius: 5px;  /* change to tailwind */
+.search-button {
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-search-button:hover {
+.search-button:hover {
     background-color: aquamarine;
+}
+
+.heading-text {
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 results {
@@ -51,7 +52,7 @@ results {
     width: 100%;
 }
 
-movie info {
+.movie info {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
@@ -60,11 +61,11 @@ movie info {
     align-items: center;
 }
 
-movie info h1 {
+.movie info h1 {
     margin: 0;
 }
 
-movie info span {
+.movie info span {
     background-color: black;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
@@ -72,7 +73,7 @@ movie info span {
 }
 
 /* Hover view */
-overview {
+.overview {
     position: absolute;
     top: 0;
     right: 0;
@@ -86,19 +87,19 @@ overview {
     overflow: auto;
 }
 
-overview h2 {
+.overview h2 {
     margin-top: 0;
 }
 
 /* Book Search */
 
-search-imput {
+.search-imput {
     width: 400px;
     padding: 10px;
     font-size: 17px;
 }
 
-search-button {
+.search-button {
     padding: 10px;
     font-size: 17px;
     cursor: pointer;
@@ -109,6 +110,6 @@ search-button {
 
 }
 
-search-button:hover {
+.search-button:hover {
     background-color: rgb(137, 35, 221);
 }

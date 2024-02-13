@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"
     <title>Book-Movie Search</title>
-    <style>
+   
+   <style>
+        /* Styling for search bar */
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        search-input {
+            width: 00px;
+            padding: 10px;
+            font-size: 17px;
+        }
         search-button {
             padding: 10px;
-            font-size: 16px;
+            font-size: 17px;
             cursor: pointer;
         }
         results {
@@ -24,10 +32,37 @@
  <button id="search-button">Search</button>
  <div id="results"></div>
 
- <script>
-    const searchImput = document.getElementById('search-input')
+  <script>
+    const searchImput = document.getElementById('search-input') ;
     const searchButton = document.getElementById('search-button')
     const resultsDiv = document.getElementById('resuts')
+
+    /* event listener for seach button */
+    searchButton.addEventListener('click',() => {
+        const query = searchImput.value.trim();
+        if (query) {
+            searchBooks(query);
+            searchMovies(query);
+        } else {
+            resultsDiv.innerHTML = '<p>Please enter your search</p>';
+        }
+    });
+
+     /* Add GOOGLE BOOK API CALL */
+     function searchBooks(query) {
+    
+        /* Show Google book API results */
+        /* API Response should show Title author and description */
+
+     }
+
+     /* Add TMDb API CALL */
+     function searchMovies(query) {
+
+        /* Show TMDb API results */
+        /* API Response should display movie results */
+        /* Diplay title, director and description */
+     }
  </script>
 </body>
 </html>

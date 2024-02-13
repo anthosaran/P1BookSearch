@@ -9,53 +9,23 @@
     <link rel="stylesheet" type="text/css" href="output.css">
 </head>
 
-<body class="p-5">
+<body onload="fetchMovies()" class="p-5">
     <h1 class="heading-text text-[30px] mb-10">Book and Movie Search</h1>    <!-- change name -->
     <div class="container">
         <form>
-            <input class="text-[#000] py-1 px-2" type="text" id="search-input" placeholder="Enter you search here">
+            <input class="input text-[#000] py-1 px-2" type="text" id="search-input" placeholder="Enter you search here">
             <select class="text-[#000] py-1 px-2">
                 <option disabled value="select an item"> Select Your Search</option>
                 <option value="books"> Books Search</option>
                 <option value="movies"> Movies Search</option>
             </select>
-            <button class="text-[#000] p-[10px] rounded-[5px] text-[17px] bg-[#00ffff]"
+            <button onclick="getInputValue()" class="text-[#000] p-[10px] rounded-[5px] text-[17px] bg-[#00ffff]"
                 id="search-button">Search</button>
         </form>
         <div id="results"></div>
+    
+<script src="./script.js"></script>
 
-        <script>
-            const searchImput = document.getElementById('search-input');
-            const searchButton = document.getElementById('search-button')
-            const resultsDiv = document.getElementById('resuts')
-
-            /* event listener for seach button */
-            searchButton.addEventListener('click', () => {
-                const query = searchImput.value.trim();
-                if (query) {
-                    searchBooks(query);
-                    searchMovies(query);
-                } else {
-                    resultsDiv.innerHTML = '<p>Please enter your search</p>';
-                }
-            });
-
-            /* Add GOOGLE BOOK API CALL */
-            function searchBooks(query) {
-
-                /* Show Google book API results */
-                /* API Response should show Title author and description */
-
-            }
-
-            /* Add TMDb API CALL */
-            function searchMovies(query) {
-
-                /* Show TMDb API results */
-                /* API Response should display movie results */
-                /* Diplay title, director and description */
-            }
-        </script>
 </body>
 
 </html>

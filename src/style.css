@@ -39,17 +39,17 @@ results {
 }
 
 /* Movie card styling temp pending the look */
-.movie {
+/* .movie {
     box-shadow: 0 6px 7px rgba(rgba(102, 255, 0, 0.877), rgb(243, 239, 21), rgb(247, 121, 4),rgb(255, 38, 0) alpha);
     border-radius: 4px;
     width: 400px;
     background-color: black;
     margin: 1rem;
     overflow: hidden;
-    position: relative;
+    position: relative; */
 }
 
-.movie image {
+/* .movie image {
     width: 100%;
 }
 
@@ -59,8 +59,8 @@ results {
     padding: 0.5rem 1rem 1rem;
     color: white;
     letter-spacing: 0.5px;
-    align-items: center;
-}
+    align-items: center; */
+/* }
 
 .movie info h1 {
     margin: 0;
@@ -70,7 +70,7 @@ results {
     background-color: black;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
-    font-weight: bold;
+    font-weight: bold; */
 }
 
 /* Hover view */

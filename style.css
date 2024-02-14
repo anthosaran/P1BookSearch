@@ -16,6 +16,9 @@
     font-size: 17px;
 }
 
+#movie-title{
+    color: black;
+}
 
 .search-button {
     transition: background-color 0.3s ease;
@@ -47,7 +50,7 @@ results {
     margin: 1rem;
     overflow: hidden;
     position: relative; */
-}
+/* } */
 
 /* .movie image {
     width: 100%;
@@ -71,7 +74,7 @@ results {
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold; */
-}
+/* } */
 
 /* Hover view */
 .overview {
